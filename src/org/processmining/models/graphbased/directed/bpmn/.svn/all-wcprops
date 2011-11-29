@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn
+END
+BPMNDiagram.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/3166/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/BPMNDiagram.java
+END
+BPMNEdge.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/BPMNEdge.java
+END
+BPMNNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/BPMNNode.java
+END
+BPMNDiagramImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/prom/!svn/ver/3222/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/BPMNDiagramImpl.java
+END
+BPMNDiagramFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/prom/!svn/ver/3214/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/BPMNDiagramFactory.java
+END

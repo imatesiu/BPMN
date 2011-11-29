@@ -1,0 +1,449 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl
+END
+XpdlEndEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlEndEvent.java
+END
+XpdlTriggerResultCancel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerResultCancel.java
+END
+XpdlLoopMultiInstance.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlLoopMultiInstance.java
+END
+XpdlCountrykey.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCountrykey.java
+END
+XpdlArtifactInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlArtifactInput.java
+END
+XpdlTriggerMultiple.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerMultiple.java
+END
+XpdlTriggerResultLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerResultLink.java
+END
+XpdlTriggerResultCompensation.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerResultCompensation.java
+END
+XpdlTaskService.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskService.java
+END
+XpdlEnumerationValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlEnumerationValue.java
+END
+XpdlDataMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlDataMapping.java
+END
+XpdlProcessHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlProcessHeader.java
+END
+XpdlPartnerLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlPartnerLink.java
+END
+XpdlSimulationInformation.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlSimulationInformation.java
+END
+XpdlTimeEstimation.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTimeEstimation.java
+END
+XpdlInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlInput.java
+END
+XpdlScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlScript.java
+END
+XpdlPackageHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3196/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlPackageHeader.java
+END
+XpdlTriggerTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerTimer.java
+END
+XpdlBlockActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlBlockActivity.java
+END
+XpdlCost.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCost.java
+END
+XpdlAssignment.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlAssignment.java
+END
+XpdlLoop.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlLoop.java
+END
+XpdlTaskSend.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskSend.java
+END
+Xpdl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/Xpdl.java
+END
+XpdlWebServiceOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlWebServiceOperation.java
+END
+XpdlEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlEvent.java
+END
+XpdlVendorExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlVendorExtension.java
+END
+XpdlLoopStandard.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlLoopStandard.java
+END
+XpdlPartnerLinkType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/3055/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlPartnerLinkType.java
+END
+XpdlWebServiceFaultCatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlWebServiceFaultCatch.java
+END
+XpdlStartEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlStartEvent.java
+END
+XpdlTriggerResultSignal.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerResultSignal.java
+END
+XpdlTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTask.java
+END
+XpdlApplicationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlApplicationType.java
+END
+XpdlCodepage.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCodepage.java
+END
+XpdlCostUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCostUnit.java
+END
+XpdlRedefinableHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlRedefinableHeader.java
+END
+XpdlNo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlNo.java
+END
+XpdlConformanceClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/prom/!svn/ver/3055/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlConformanceClass.java
+END
+XpdlTaskReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskReference.java
+END
+XpdlIORules.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlIORules.java
+END
+XpdlExtendedAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlExtendedAttribute.java
+END
+XpdlTriggerConditional.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerConditional.java
+END
+XpdlIcon.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlIcon.java
+END
+XpdlCostStructure.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCostStructure.java
+END
+XpdlElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlElement.java
+END
+XpdlSplit.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlSplit.java
+END
+XpdlTriggerRule.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerRule.java
+END
+XpdlReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlReference.java
+END
+XpdlExtensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlExtensions.java
+END
+XpdlJoin.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/prom/!svn/ver/3080/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlJoin.java
+END
+XpdlTaskManual.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskManual.java
+END
+XpdlOutput.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlOutput.java
+END
+XpdlDeadline.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlDeadline.java
+END
+XpdlTriggerResultMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerResultMessage.java
+END
+XpdlCreated.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCreated.java
+END
+XpdlTriggerIntermediateMultiple.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTriggerIntermediateMultiple.java
+END
+XpdlIntermediateEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlIntermediateEvent.java
+END
+XpdlEndPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlEndPoint.java
+END
+XpdlParticipantType.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlParticipantType.java
+END
+XpdlTransitionRestriction.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTransitionRestriction.java
+END
+XpdlImplementation.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlImplementation.java
+END
+XpdlTransaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTransaction.java
+END
+XpdlCondition.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlCondition.java
+END
+XpdlTaskScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskScript.java
+END
+XpdlResultError.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlResultError.java
+END
+XpdlResultMultiple.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlResultMultiple.java
+END
+XpdlRoute.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/prom/!svn/ver/3343/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlRoute.java
+END
+XpdlTaskUser.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskUser.java
+END
+XpdlAuthor.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlAuthor.java
+END
+XpdlResourceCosts.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlResourceCosts.java
+END
+XpdlPropertyInput.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlPropertyInput.java
+END
+XpdlTaskReceive.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/XpdlTaskReceive.java
+END

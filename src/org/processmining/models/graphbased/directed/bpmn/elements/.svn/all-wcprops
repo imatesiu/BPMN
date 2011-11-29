@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements
+END
+Swimlane.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/Swimlane.java
+END
+Event.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/prom/!svn/ver/3387/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/Event.java
+END
+Gateway.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/Gateway.java
+END
+Flow.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/Flow.java
+END
+SubProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/SubProcess.java
+END
+Activity.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/Activity.java
+END
+IGraphElementDecoration.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/models/graphbased/directed/bpmn/elements/IGraphElementDecoration.java
+END

@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text
+END
+XpdlDocumentation.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlDocumentation.java
+END
+XpdlXpdlVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlXpdlVersion.java
+END
+XpdlLimit.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlLimit.java
+END
+XpdlPriorityUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlPriorityUnit.java
+END
+XpdlPriority.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlPriority.java
+END
+XpdlLength.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlLength.java
+END
+XpdlWaitingTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlWaitingTime.java
+END
+XpdlValidFrom.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlValidFrom.java
+END
+XpdlDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlDescription.java
+END
+XpdlText.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlText.java
+END
+XpdlResponsible.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlResponsible.java
+END
+XpdlDuration.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlDuration.java
+END
+XpdlVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlVersion.java
+END
+XpdlScale.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlScale.java
+END
+XpdlPrecision.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlPrecision.java
+END
+XpdlVendor.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlVendor.java
+END
+XpdlWorkingTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlWorkingTime.java
+END
+XpdlPerformer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlPerformer.java
+END
+XpdlValidTo.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlValidTo.java
+END
+XpdlModificationDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/text/XpdlModificationDate.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/bpmn
+END
+BPMNImportXPDL20.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/bpmn/BPMNImportXPDL20.java
+END
+XPDLReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/bpmn/XPDLReader.java
+END
+BPMNVisualization.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/bpmn/BPMNVisualization.java
+END

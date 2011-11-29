@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/graphics
+END
+XpdlConnectorGraphicsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/graphics/XpdlConnectorGraphicsInfo.java
+END
+XpdlLayoutInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/graphics/XpdlLayoutInfo.java
+END
+XpdlCoordinates.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/graphics/XpdlCoordinates.java
+END
+XpdlNodeGraphicsInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/graphics/XpdlNodeGraphicsInfo.java
+END

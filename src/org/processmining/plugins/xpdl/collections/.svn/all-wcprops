@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections
+END
+XpdlExtendedAttributes.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlExtendedAttributes.java
+END
+XpdlResponsibles.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlResponsibles.java
+END
+XpdlTypeDeclarations.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlTypeDeclarations.java
+END
+XpdlOutputSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlOutputSet.java
+END
+XpdlTransitions.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlTransitions.java
+END
+XpdlPartnerLinkTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlPartnerLinkTypes.java
+END
+XpdlCategories.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlCategories.java
+END
+XpdlActivitySets.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlActivitySets.java
+END
+XpdlAssignments.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlAssignments.java
+END
+XpdlPages.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlPages.java
+END
+XpdlMessageFlows.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlMessageFlows.java
+END
+XpdlTransitionRestrictions.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlTransitionRestrictions.java
+END
+XpdlActivities.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlActivities.java
+END
+XpdlDataMappings.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlDataMappings.java
+END
+XpdlTransitionRefs.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlTransitionRefs.java
+END
+XpdlInputSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlInputSet.java
+END
+XpdlPartnerLinks.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlPartnerLinks.java
+END
+XpdlVendorExtensions.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlVendorExtensions.java
+END
+XpdlCollections.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlCollections.java
+END
+XpdlArtifacts.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlArtifacts.java
+END
+XpdlExternalPackages.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlExternalPackages.java
+END
+XpdlPerformers.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlPerformers.java
+END
+XpdlApplications.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlApplications.java
+END
+XpdlPools.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlPools.java
+END
+XpdlActualParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlActualParameters.java
+END
+XpdlInputSets.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlInputSets.java
+END
+XpdlOutputSets.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlOutputSets.java
+END
+XpdlAssociations.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlAssociations.java
+END
+XpdlDataFields.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlDataFields.java
+END
+XpdlParticipants.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlParticipants.java
+END
+XpdlWorkflowProcesses.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlWorkflowProcesses.java
+END
+XpdlLanes.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlLanes.java
+END
+XpdlFormalParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/collections/XpdlFormalParameters.java
+END

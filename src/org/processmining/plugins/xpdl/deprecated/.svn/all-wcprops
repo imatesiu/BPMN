@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/deprecated
+END
+XpdlTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/deprecated/XpdlTool.java
+END
+XpdlStartMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/deprecated/XpdlStartMode.java
+END
+XpdlFinishMode.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/deprecated/XpdlFinishMode.java
+END

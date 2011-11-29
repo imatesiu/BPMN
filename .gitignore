@@ -1,0 +1,8 @@
+.*
+bin/
+bindist/
+dist/
+src-test/
+tests/
+lib
+packagelib

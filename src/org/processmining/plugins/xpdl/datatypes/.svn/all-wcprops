@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes
+END
+XpdlMember.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlMember.java
+END
+XpdlTypeDeclaration.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlTypeDeclaration.java
+END
+XpdlEnumerationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlEnumerationType.java
+END
+XpdlUnionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlUnionType.java
+END
+XpdlDataType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlDataType.java
+END
+XpdlListType.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlListType.java
+END
+XpdlDataTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlDataTypes.java
+END
+XpdlArrayType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlArrayType.java
+END
+XpdlRecordType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlRecordType.java
+END
+XpdlExternalReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlExternalReference.java
+END
+XpdlSchemaType.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlSchemaType.java
+END
+XpdlBasicType.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/prom/!svn/ver/3027/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlBasicType.java
+END
+XpdlDeclaredType.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/prom/!svn/ver/48/Packages/BPMN/Trunk/src/org/processmining/plugins/xpdl/datatypes/XpdlDeclaredType.java
+END
