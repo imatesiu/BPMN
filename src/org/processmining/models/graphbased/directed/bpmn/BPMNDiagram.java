@@ -5,11 +5,14 @@ import java.util.Set;
 
 import org.processmining.models.graphbased.directed.DirectedGraph;
 import org.processmining.models.graphbased.directed.bpmn.elements.Activity;
+import org.processmining.models.graphbased.directed.bpmn.elements.Artifacts;
+import org.processmining.models.graphbased.directed.bpmn.elements.Artifacts.ArtifactType;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventTrigger;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventType;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventUse;
 import org.processmining.models.graphbased.directed.bpmn.elements.Flow;
+import org.processmining.models.graphbased.directed.bpmn.elements.FlowAssociation;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway.GatewayType;
 import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
@@ -87,5 +90,23 @@ public interface BPMNDiagram extends DirectedGraph<BPMNNode, BPMNEdge<? extends 
 	Swimlane removeSwimlane(Swimlane swimlane);
 
 	Collection<Swimlane> getSwimlanes();
+	//Artifacts
+		Artifacts addArtifacts(String label, ArtifactType artifactType);
+		
+		Artifacts addArtifacts(String label, ArtifactType artifactType, SubProcess parent);
+		
+		Artifacts addArtifacts(String label, ArtifactType artifactType, Swimlane parentSwimlane);
 
+		Artifacts removeArtifact(Artifacts artifacts);
+
+		Collection<Artifacts> getArtifacts();
+	
+		//FlowAssociation
+		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target);
+		
+		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target, SubProcess parent);
+		
+		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target, Swimlane parentSwimlane);
+
+		Set<FlowAssociation> getFlowAssociation();
 }

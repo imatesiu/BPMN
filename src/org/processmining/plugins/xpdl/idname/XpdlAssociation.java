@@ -1,7 +1,13 @@
 package org.processmining.plugins.xpdl.idname;
 
 import java.util.Arrays;
+import java.util.Map;
 
+import org.processmining.models.graphbased.directed.DirectedGraphNode;
+import org.processmining.models.graphbased.directed.bpmn.BPMNDiagram;
+import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
+import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
+import org.processmining.models.graphbased.directed.bpmn.elements.Swimlane;
 import org.processmining.plugins.xpdl.Xpdl;
 import org.processmining.plugins.xpdl.graphics.collections.XpdlConnectorGraphicsInfos;
 import org.xmlpull.v1.XmlPullParser;
@@ -170,5 +176,29 @@ public class XpdlAssociation extends XpdlIdName {
 
 	public void setConnectorGraphicsInfos(XpdlConnectorGraphicsInfos connectorGraphicsInfos) {
 		this.connectorGraphicsInfos = connectorGraphicsInfos;
+	}
+
+	public void convertToBpmn(BPMNDiagram bpmn, DirectedGraphNode parent,
+			Map<String, BPMNNode> id2node) {
+		if ((source != null) && (target != null)) {
+			
+				BPMNNode fromNode = id2node.get(source);
+				BPMNNode toNode = id2node.get(target);
+				if ((fromNode != null) && (toNode != null)) {
+					if (parent == null) {
+						bpmn.addFlowAssociation(fromNode, toNode);
+					} else {
+						if (parent instanceof Swimlane) {
+							bpmn.addFlowAssociation(fromNode, toNode, (Swimlane) parent);
+						} else {
+							bpmn.addFlowAssociation(fromNode, toNode, (SubProcess) parent);
+						}
+					}
+					
+				}
+			
+
+		}
+
 	}
 }

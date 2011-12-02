@@ -1,7 +1,14 @@
 package org.processmining.plugins.xpdl.idname;
 
 import java.util.Arrays;
+import java.util.Map;
 
+import org.processmining.models.graphbased.directed.DirectedGraphNode;
+import org.processmining.models.graphbased.directed.bpmn.BPMNDiagram;
+import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
+import org.processmining.models.graphbased.directed.bpmn.elements.Artifacts.ArtifactType;
+import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
+import org.processmining.models.graphbased.directed.bpmn.elements.Swimlane;
 import org.processmining.plugins.xpdl.Xpdl;
 import org.processmining.plugins.xpdl.graphics.collections.XpdlNodeGraphicsInfos;
 import org.xmlpull.v1.XmlPullParser;
@@ -205,6 +212,38 @@ public class XpdlArtifact extends XpdlIdName {
 
 	public void setNodeGraphicsInfos(XpdlNodeGraphicsInfos nodeGraphicsInfos) {
 		this.nodeGraphicsInfos = nodeGraphicsInfos;
+	}
+
+	public void convertToBpmn(BPMNDiagram bpmn, DirectedGraphNode parent,
+			Map<String, BPMNNode> id2node) {
+		if(artifactType != null){
+			if(artifactType.equals("Annotation"))
+				if (parent == null) {//then either there is no parent or there is a swimlane
+
+					if (   this.getNodeGraphicsInfos() != null
+							&& this.getNodeGraphicsInfos().getList() != null
+							&& this.getNodeGraphicsInfos().getList().size() > 0
+							&& this.getNodeGraphicsInfos().getList().get(0).getLaneId() != null)
+					{
+						parent = id2node.get(this.getNodeGraphicsInfos().getList().get(0).getLaneId());	
+					}
+					if (parent != null) {
+
+						if (parent instanceof Swimlane) {
+							id2node.put(id, bpmn.addArtifacts(textAnnotation, ArtifactType.TEXTANNOATION,  (Swimlane) parent));
+						} else { if(parent instanceof SubProcess){
+
+							id2node.put(id, bpmn.addArtifacts(textAnnotation, ArtifactType.TEXTANNOATION, (SubProcess) parent));
+						}else
+							id2node.put(id, bpmn.addArtifacts(textAnnotation, ArtifactType.TEXTANNOATION));
+						} 
+					}
+				}
+			//id2node.put(id, bpmn.addArtifacts(textAnnotation, ArtifactType.TEXTANNOATION, parent));
+
+
+		}
+
 	}
 
 }

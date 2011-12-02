@@ -1,5 +1,10 @@
 package org.processmining.plugins.xpdl.collections;
 
+import java.util.Map;
+
+import org.processmining.models.graphbased.directed.DirectedGraphNode;
+import org.processmining.models.graphbased.directed.bpmn.BPMNDiagram;
+import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
 import org.processmining.plugins.xpdl.idname.XpdlAssociation;
 
 /**
@@ -21,6 +26,15 @@ public class XpdlAssociations extends XpdlCollections<XpdlAssociation> {
 
 	public XpdlAssociation create() {
 		return new XpdlAssociation("Association");
+	}
+	public void convertToBpmn(BPMNDiagram bpmn, DirectedGraphNode parent,
+			Map<String, BPMNNode> id2node) {
+		
+		for(XpdlAssociation xs : this.list){
+
+			xs.convertToBpmn(bpmn,parent,id2node);
+		}
+
 	}
 
 }

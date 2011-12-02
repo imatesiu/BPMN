@@ -13,9 +13,11 @@ import org.processmining.models.graphbased.directed.bpmn.BPMNDiagram;
 import org.processmining.models.graphbased.directed.bpmn.BPMNEdge;
 import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
 import org.processmining.models.graphbased.directed.bpmn.elements.Activity;
+import org.processmining.models.graphbased.directed.bpmn.elements.Artifacts;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventType;
 import org.processmining.models.graphbased.directed.bpmn.elements.Flow;
+import org.processmining.models.graphbased.directed.bpmn.elements.FlowAssociation;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway.GatewayType;
 import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
@@ -42,6 +44,8 @@ import org.processmining.plugins.xpdl.XpdlStartEvent;
 import org.processmining.plugins.xpdl.XpdlTransitionRestriction;
 import org.processmining.plugins.xpdl.collections.XpdlActivities;
 import org.processmining.plugins.xpdl.collections.XpdlActivitySets;
+import org.processmining.plugins.xpdl.collections.XpdlArtifacts;
+import org.processmining.plugins.xpdl.collections.XpdlAssociations;
 import org.processmining.plugins.xpdl.collections.XpdlLanes;
 import org.processmining.plugins.xpdl.collections.XpdlParticipants;
 import org.processmining.plugins.xpdl.collections.XpdlPools;
@@ -56,6 +60,8 @@ import org.processmining.plugins.xpdl.graphics.collections.XpdlConnectorGraphics
 import org.processmining.plugins.xpdl.graphics.collections.XpdlNodeGraphicsInfos;
 import org.processmining.plugins.xpdl.idname.XpdlActivity;
 import org.processmining.plugins.xpdl.idname.XpdlActivitySet;
+import org.processmining.plugins.xpdl.idname.XpdlArtifact;
+import org.processmining.plugins.xpdl.idname.XpdlAssociation;
 import org.processmining.plugins.xpdl.idname.XpdlLane;
 import org.processmining.plugins.xpdl.idname.XpdlParticipant;
 import org.processmining.plugins.xpdl.idname.XpdlPool;
@@ -96,6 +102,11 @@ public class BPMN2XPDLConversion {
 		fillXpdlActivityPositions(context);
 		fillXpdlTransitions();
 		fillSwimlanes();
+		fillArtifacts();
+
+		fillXpdlArtifactsPositions(context);
+
+		fillAssociations();
 		return xpdl;
 	}
 	
@@ -107,6 +118,8 @@ public class BPMN2XPDLConversion {
 
 		fillXpdlActivities();
 		fillXpdlTransitions();
+		fillArtifacts();
+		fillAssociations();
 		fillSwimlanes();
 		return xpdl;
 	}
@@ -146,6 +159,16 @@ public class BPMN2XPDLConversion {
 					List<XpdlNodeGraphicsInfo> infos = xpdlActivity.getNodeGraphicsInfos().getList();
 					for (XpdlNodeGraphicsInfo xpdlNodeGraphicsInfo : infos) {
 						xpdlNodeGraphicsInfo.setLaneId(map3.get(xpdlActivity.getId()));
+					}
+				}
+			}
+			for (XpdlArtifact xpdlArtifact : xpdl.getArtifacts().getList() ) {
+				if (xpdlArtifact.getNodeGraphicsInfos() != null) {
+					List<XpdlNodeGraphicsInfo> infos = xpdlArtifact.getNodeGraphicsInfos().getList();
+					for (XpdlNodeGraphicsInfo xpdlNodeGraphicsInfo : infos) {
+						if(map3.containsKey((xpdlArtifact.getId()))){
+						xpdlNodeGraphicsInfo.setLaneId(map3.get(xpdlArtifact.getId()));
+						}
 					}
 				}
 			}
@@ -467,6 +490,118 @@ public class BPMN2XPDLConversion {
 
 	}
 
+	private void fillXpdlArtifactsPositions(PluginContext context) {
+		ProMJGraphPanel graphPanel = ProMJGraphVisualizer.instance().visualizeGraph(context, bpmn);
+		ProMGraphModel graphModel = graphPanel.getGraph().getModel();
+
+		@SuppressWarnings("rawtypes")
+		List proMGraphCellList = graphModel.getRoots();
+
+		Map<String, XpdlArtifact> map = new HashMap<String, XpdlArtifact>();
+		for (XpdlArtifact xpdlArtifact : xpdl.getArtifacts().getList()) {
+			map.put(xpdlArtifact.getId(), xpdlArtifact);
+		}
+
+
+		for (Object object : proMGraphCellList) {
+			if (object instanceof ProMGraphCell) {
+				ProMGraphCell proMGraphCell = (ProMGraphCell) object;
+				XpdlArtifact xpdlArtifact = map.get("" + proMGraphCell.hashCode());
+				if (xpdlArtifact != null) {
+					Rectangle2D rectangle = proMGraphCell.getView().getBounds();
+					XpdlNodeGraphicsInfos nodeGraphicsInfos = new XpdlNodeGraphicsInfos("NodeGraphicsInfos");
+
+					XpdlNodeGraphicsInfo nodeGraphicsInfo = new XpdlNodeGraphicsInfo("NodeGraphicsInfo");
+					nodeGraphicsInfo.setToolId("ProM");
+
+					XpdlCoordinates coordinates = new XpdlCoordinates("Coordinates");
+
+					nodeGraphicsInfo.setHeight("" + (int) rectangle.getHeight());
+					nodeGraphicsInfo.setWidth("" + (int) rectangle.getWidth());
+
+					coordinates.setxCoordinate("" + (int) rectangle.getX());
+					coordinates.setyCoordinate("" + (int) rectangle.getY());
+					nodeGraphicsInfo.setCoordinates(coordinates);
+
+					nodeGraphicsInfos.add2List(nodeGraphicsInfo);
+					xpdlArtifact.setNodeGraphicsInfos(nodeGraphicsInfos);
+
+				}else {
+					@SuppressWarnings("unchecked")
+					List<Object> cells = proMGraphCell.getChildren();
+					for (Object object2 : cells) {
+						if (object2 instanceof ProMGraphCell) {
+							ProMGraphCell proMGraphCell2 = (ProMGraphCell) object2;
+							XpdlArtifact xpdlArtifact2 = map.get("" + proMGraphCell2.hashCode());
+							if (xpdlArtifact2 != null) {
+								Rectangle2D rectangle = proMGraphCell2.getView().getBounds();
+								XpdlNodeGraphicsInfos nodeGraphicsInfos = new XpdlNodeGraphicsInfos("NodeGraphicsInfos");
+
+								XpdlNodeGraphicsInfo nodeGraphicsInfo = new XpdlNodeGraphicsInfo("NodeGraphicsInfo");
+								nodeGraphicsInfo.setToolId("ProM");
+
+								XpdlCoordinates coordinates = new XpdlCoordinates("Coordinates");
+
+								nodeGraphicsInfo.setHeight("" + (int) rectangle.getHeight());
+								nodeGraphicsInfo.setWidth("" + (int) rectangle.getWidth());
+
+								coordinates.setxCoordinate("" + (int) rectangle.getX());
+								coordinates.setyCoordinate("" + (int) rectangle.getY());
+								nodeGraphicsInfo.setCoordinates(coordinates);
+
+								nodeGraphicsInfos.add2List(nodeGraphicsInfo);
+								xpdlArtifact2.setNodeGraphicsInfos(nodeGraphicsInfos);
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+
+	private void fillArtifacts() {
+		for (Artifacts a : bpmn.getArtifacts()){
+
+
+			XpdlArtifact t =  new XpdlArtifact("Artifact");
+
+			t.setArtifactType("Annotation");
+			String label = a.getLabel().replaceAll("<html>", "").replaceAll("<br/>", " ").replaceAll("</html>", "");
+			t.setTextAnnotation(label);
+			t.setId("" + a.hashCode());
+		
+
+			XpdlArtifacts artiss = xpdl.getArtifacts();
+
+
+			artiss.add2List(t);
+
+
+		}
+
+
+	}
+
+
+	private void fillAssociations() {
+		for (FlowAssociation flowa : bpmn.getFlowAssociation()) {
+
+			XpdlAssociation t = new XpdlAssociation("Association");
+		
+			XpdlAssociations associations = xpdl.getAssociations();
+
+			t.setSource("" + flowa.getSource().hashCode());
+			t.setTarget("" + flowa.getTarget().hashCode());
+			t.setId("" + flowa.hashCode());
+
+			associations.add2List(t);
+
+
+		}
+
+	}
 	/**
 	 * @param xpdl
 	 * @return
@@ -551,6 +686,14 @@ public class BPMN2XPDLConversion {
 		xpdl.setPackageHeader(packageHeader);
 		xpdl.setPools(xpdlPools);
 		xpdl.setWorkflowProcesses(xpdlWorkflowProcesses);
+		
+		//FILL XPDL ARTIFACTS
+		XpdlAssociations associations = new XpdlAssociations("Associations");
+
+		XpdlArtifacts artifatcs = new XpdlArtifacts("Artifacts");
+
+		xpdl.setArtifacts(artifatcs);
+		xpdl.setAssociations(associations);
 
 		return xpdl;
 	}

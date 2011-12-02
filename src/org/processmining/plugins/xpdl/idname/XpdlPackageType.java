@@ -352,8 +352,18 @@ public class XpdlPackageType extends XpdlIdName {
 		if (pools != null) {
 			pools.convertToBpmn(bpmn, id2node);
 		}
+
+
+		if(artifacts!=null){
+			artifacts.convertToBpmn(bpmn, null, id2node);
+		}
+		
 		if (workflowProcesses != null) {
 			workflowProcesses.convertToBpmn(bpmn, id2node);
+		}
+		
+		if(associations!=null){
+			associations.convertToBpmn(bpmn, null, id2node);
 		}
 	}
 
