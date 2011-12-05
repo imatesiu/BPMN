@@ -1,14 +1,14 @@
 package org.processmining.models.graphbased.directed.bpmn.elements;
 
+import java.awt.Dimension;
 import java.awt.Graphics2D;
 
 import org.processmining.models.graphbased.AttributeMap;
-import org.processmining.models.graphbased.AttributeMap.ArrowType;
-import org.processmining.models.graphbased.directed.bpmn.BPMNEdge;
+import org.processmining.models.graphbased.directed.bpmn.BPMNHyperEdge;
 import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
 import org.processmining.models.shapes.Decorated;
 
-public class Flow extends BPMNEdge<BPMNNode, BPMNNode> implements Decorated {
+public class Flow extends BPMNHyperEdge<BPMNNode, BPMNNode> implements Decorated {
 	private IGraphElementDecoration decorator = null;
 
 	public Flow(BPMNNode source, BPMNNode target, String label) {
@@ -30,10 +30,17 @@ public class Flow extends BPMNEdge<BPMNNode, BPMNNode> implements Decorated {
 	 * 
 	 */
 	private void fillAttributes(String label) {
-		getAttributeMap().put(AttributeMap.EDGEEND, ArrowType.ARROWTYPE_CLASSIC);
-		getAttributeMap().put(AttributeMap.EDGEENDFILLED, true);
+		//getAttributeMap().put(AttributeMap.EDGEEND, ArrowType.ARROWTYPE_CLASSIC);
+		//getAttributeMap().put(AttributeMap.EDGEENDFILLED, true);
 		getAttributeMap().put(AttributeMap.SHOWLABEL, false);
-
+		if(label!=null){
+			getAttributeMap().put(AttributeMap.LABEL, label);
+			getAttributeMap().put(AttributeMap.SHOWLABEL, true);
+		}
+		getAttributeMap().put(AttributeMap.SIZE, new Dimension(1, 1));
+		//getAttributeMap().put(AttributeMap.SQUAREBB, false);
+		getAttributeMap().put(AttributeMap.RESIZABLE, false);
+		//getAttributeMap().put(AttributeMap., true);
 	}
 
 	public Swimlane getParentSwimlane() {

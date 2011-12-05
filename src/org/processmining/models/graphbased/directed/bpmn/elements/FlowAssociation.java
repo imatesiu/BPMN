@@ -4,7 +4,6 @@ package org.processmining.models.graphbased.directed.bpmn.elements;
 
 import java.awt.Graphics2D;
 
-import org.jgraph.graph.GraphConstants;
 import org.processmining.models.graphbased.AttributeMap;
 import org.processmining.models.graphbased.AttributeMap.ArrowType;
 import org.processmining.models.graphbased.directed.bpmn.BPMNEdge;
@@ -78,7 +77,6 @@ public class FlowAssociation extends BPMNEdge<BPMNNode, BPMNNode> implements Dec
 	
 	public void decorate(Graphics2D g2d, double x, double y, double width,
 			double height) {
-		// TODO Auto-generated method stub
 		if (decorator != null) {
 			decorator.decorate(g2d, x, y, width, height);
 		}

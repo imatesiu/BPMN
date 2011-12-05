@@ -5,6 +5,7 @@ import java.util.Map;
 import org.processmining.models.graphbased.directed.DirectedGraphNode;
 import org.processmining.models.graphbased.directed.bpmn.BPMNDiagram;
 import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
+import org.processmining.models.graphbased.directed.bpmn.elements.Flow;
 import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
 import org.processmining.models.graphbased.directed.bpmn.elements.Swimlane;
 import org.processmining.plugins.xpdl.Xpdl;
@@ -185,16 +186,17 @@ public class XpdlTransition extends XpdlIdName {
 		if ((from != null) && (to != null)) {
 			BPMNNode fromNode = id2node.get(from);
 			BPMNNode toNode = id2node.get(to);
+			Flow flow = null;
 			if ((fromNode != null) && (toNode != null)) {
 				if (parent == null) {
-					bpmn.addFlow(fromNode, toNode, null);
+					flow = bpmn.addFlow(fromNode, toNode, null);
 				} else {
 					if (parent instanceof SubProcess) {
-						bpmn.addFlow(fromNode, toNode, (SubProcess)parent, null);
+						flow =	bpmn.addFlow(fromNode, toNode, (SubProcess)parent, null);
 					}else
-						bpmn.addFlow(fromNode, toNode, (Swimlane)parent, null);
+						flow = bpmn.addFlow(fromNode, toNode, (Swimlane)parent, null);
 				}
-
+				id2node.put(id, flow);
 			}
 		}
 	}
