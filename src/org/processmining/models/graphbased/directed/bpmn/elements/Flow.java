@@ -53,6 +53,10 @@ public class Flow extends BPMNHyperEdge<BPMNNode, BPMNNode> implements Decorated
 		return null;
 	}
 
+	public BPMNNode getSouce(){
+		return this.getSource();
+		
+	}
 	public SubProcess getParentSubProcess() {
 		if (getParent() != null) {
 			if (getParent() instanceof SubProcess)
