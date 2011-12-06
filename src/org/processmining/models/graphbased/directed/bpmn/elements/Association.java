@@ -10,21 +10,21 @@ import org.processmining.models.graphbased.directed.bpmn.BPMNEdge;
 import org.processmining.models.graphbased.directed.bpmn.BPMNNode;
 import org.processmining.models.shapes.Decorated;
 
-public class FlowAssociation extends BPMNEdge<BPMNNode, BPMNNode> implements Decorated{
+public class Association extends BPMNEdge<BPMNNode, BPMNNode> implements Decorated{
 
 	private IGraphElementDecoration decorator = null;
 
-	public FlowAssociation(BPMNNode source, BPMNNode target) {
+	public Association(BPMNNode source, BPMNNode target) {
 		super(source, target);
 		fillAttributes();
 		
 	}
-	public FlowAssociation(BPMNNode source, BPMNNode target, SubProcess parent) {
+	public Association(BPMNNode source, BPMNNode target, SubProcess parent) {
 		super(source, target, parent);
 		fillAttributes();
 		
 	}
-	public FlowAssociation(BPMNNode source, BPMNNode target, Swimlane parent) {
+	public Association(BPMNNode source, BPMNNode target, Swimlane parent) {
 		super(source, target, parent);
 		fillAttributes();
 		

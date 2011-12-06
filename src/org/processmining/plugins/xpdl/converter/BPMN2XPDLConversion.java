@@ -17,7 +17,7 @@ import org.processmining.models.graphbased.directed.bpmn.elements.Artifacts;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventType;
 import org.processmining.models.graphbased.directed.bpmn.elements.Flow;
-import org.processmining.models.graphbased.directed.bpmn.elements.FlowAssociation;
+import org.processmining.models.graphbased.directed.bpmn.elements.Association;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway.GatewayType;
 import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
@@ -586,7 +586,7 @@ public class BPMN2XPDLConversion {
 
 
 	private void fillAssociations() {
-		for (FlowAssociation flowa : bpmn.getFlowAssociation()) {
+		for (Association flowa : bpmn.getFlowAssociation()) {
 
 			XpdlAssociation t = new XpdlAssociation("Association");
 		

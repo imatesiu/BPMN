@@ -12,7 +12,7 @@ import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventTri
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventType;
 import org.processmining.models.graphbased.directed.bpmn.elements.Event.EventUse;
 import org.processmining.models.graphbased.directed.bpmn.elements.Flow;
-import org.processmining.models.graphbased.directed.bpmn.elements.FlowAssociation;
+import org.processmining.models.graphbased.directed.bpmn.elements.Association;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway;
 import org.processmining.models.graphbased.directed.bpmn.elements.Gateway.GatewayType;
 import org.processmining.models.graphbased.directed.bpmn.elements.SubProcess;
@@ -102,11 +102,11 @@ public interface BPMNDiagram extends DirectedGraph<BPMNNode, BPMNEdge<? extends 
 		Collection<Artifacts> getArtifacts();
 	
 		//FlowAssociation
-		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target);
+		Association addFlowAssociation(BPMNNode source, BPMNNode target);
 		
-		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target, SubProcess parent);
+		Association addFlowAssociation(BPMNNode source, BPMNNode target, SubProcess parent);
 		
-		FlowAssociation addFlowAssociation(BPMNNode source, BPMNNode target, Swimlane parentSwimlane);
+		Association addFlowAssociation(BPMNNode source, BPMNNode target, Swimlane parentSwimlane);
 
-		Set<FlowAssociation> getFlowAssociation();
+		Set<Association> getFlowAssociation();
 }
