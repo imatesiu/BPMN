@@ -189,12 +189,12 @@ public class XpdlTransition extends XpdlIdName {
 			Flow flow = null;
 			if ((fromNode != null) && (toNode != null)) {
 				if (parent == null) {
-					flow = bpmn.addFlow(fromNode, toNode, null);
+					flow = bpmn.addFlow(fromNode, toNode, name);
 				} else {
 					if (parent instanceof SubProcess) {
-						flow =	bpmn.addFlow(fromNode, toNode, (SubProcess)parent, null);
+						flow =	bpmn.addFlow(fromNode, toNode, (SubProcess)parent, name);
 					}else
-						flow = bpmn.addFlow(fromNode, toNode, (Swimlane)parent, null);
+						flow = bpmn.addFlow(fromNode, toNode, (Swimlane)parent, name);
 				}
 				id2node.put(id, flow);
 			}

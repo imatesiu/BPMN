@@ -1,5 +1,6 @@
 package org.processmining.models.graphbased.directed.bpmn;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.util.HashSet;
 import java.util.Set;
@@ -26,6 +27,7 @@ public abstract class BPMNHyperEdge <S extends BPMNNode, T extends BPMNNode> ext
 		private void fillAttributes() {
 			getAttributeMap().put(AttributeMap.EDGEEND, ArrowType.ARROWTYPE_NONE);
 			getAttributeMap().put(AttributeMap.EDGEENDFILLED, true);
+			getAttributeMap().remove(AttributeMap.LABEL);
 			getAttributeMap().put(AttributeMap.SHOWLABEL, false);
 
 		}
@@ -55,6 +57,7 @@ public abstract class BPMNHyperEdge <S extends BPMNNode, T extends BPMNNode> ext
 		private void fillAttributes() {
 			getAttributeMap().put(AttributeMap.EDGEEND, ArrowType.ARROWTYPE_CLASSIC);
 			getAttributeMap().put(AttributeMap.EDGEENDFILLED, true);
+			getAttributeMap().remove(AttributeMap.LABEL);
 			getAttributeMap().put(AttributeMap.SHOWLABEL, false);
 
 		}
@@ -77,6 +80,8 @@ public abstract class BPMNHyperEdge <S extends BPMNNode, T extends BPMNNode> ext
 	private T target;
 	private InEdge inEdge;
 	private OutEdge outEdge;
+	
+	
 	public BPMNHyperEdge(S source, T target) {
 		super(source.getGraph());
 		this.source = source;
@@ -98,11 +103,31 @@ public abstract class BPMNHyperEdge <S extends BPMNNode, T extends BPMNNode> ext
 		}
 
 	}
+	public static final Color ABSTRACTBACKGROUNDCOLOR = null;
+	public static final Color ABSTRACTBORDERCOLOR = null;
+	public static final Color ABSTRACTTEXTCOLOR = null;
+
+	public static final Color ADJACENTBACKGROUNDCOLOR =null;
+
+	public static final Color CLUSTERBACKGROUNDCOLOR = null;
+	public static final Color CLUSTERBORDERCOLOR = null;
+	public static final Color CLUSTERTEXTCOLOR = null;
+
+	public static final Color EDGECOLOR = null;
+	public static final Color EDGECORRELATEDCOLOR = null;
+	public static final Color EDGEUNCORRELATEDCOLOR = null;
+
+	public static final Color LABELCOLOR = null;
+
+	public static final Color PRIMITIVEBACKGROUNDCOLOR = null;
+	public static final Color PRIMITIVEBORDERCOLOR = null;
+	public static final Color PRIMITIVETEXTCOLOR = null;
 	public BPMNHyperEdge(S source, T target, SubProcess parentSubProcess) {
 		super(source.getGraph(), parentSubProcess);
 		this.source = source;
 		this.target = target;
 		addRealEdges();
+		
 	}
 	public BPMNHyperEdge(S source, T target, Swimlane parentSwimLine) {
 		super(source.getGraph(), parentSwimLine);
@@ -131,4 +156,20 @@ public abstract class BPMNHyperEdge <S extends BPMNNode, T extends BPMNNode> ext
 
 		return edges;
 	}
+	
+	public boolean equals(Object o) {
+		
+		if (!(this.getClass().equals(o.getClass()))) {
+			return false;
+		}
+		BPMNHyperEdge<?, ?> edge = (BPMNHyperEdge<?, ?>) o;
+
+		return edge.getId().equals(this.getId());
+	}
+	
+	public int compareTo(BPMNHyperEdge<S, T> edge) {
+		return edge.getId().compareTo(this.getId());
+	}
+
+	
 }
