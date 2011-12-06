@@ -39,7 +39,10 @@ public class Flow extends BPMNHyperEdge<BPMNNode, BPMNNode> implements Decorated
 		getAttributeMap().put(AttributeMap.SHOWLABEL, false);
 
 		if(label!=null){
-			this.setLabel(label);
+			if(!label.equals("no label"))
+				this.setLabel(label);
+			else
+				getAttributeMap().put(AttributeMap.SIZE, new Dimension(1, 1));
 		}else{
 			getAttributeMap().put(AttributeMap.SIZE, new Dimension(1, 1));
 		}
@@ -51,7 +54,7 @@ public class Flow extends BPMNHyperEdge<BPMNNode, BPMNNode> implements Decorated
 		getAttributeMap().remove(AttributeMap.LABEL);
 		getAttributeMap().put(AttributeMap.LABEL, label);
 
-		getAttributeMap().put(AttributeMap.SIZE, new Dimension(10, 10));
+		getAttributeMap().put(AttributeMap.SIZE, new Dimension(label.length()*10, label.length()*10));
 		getAttributeMap().put(AttributeMap.SHAPE, new Ellipse());
 		getAttributeMap().put(AttributeMap.FILLCOLOR, Color.WHITE);
 		getAttributeMap().put(AttributeMap.STROKECOLOR, Color.WHITE);
@@ -60,13 +63,13 @@ public class Flow extends BPMNHyperEdge<BPMNNode, BPMNNode> implements Decorated
 		getAttributeMap().put(AttributeMap.LABELHORIZONTALALIGNMENT, SwingConstants.CENTER);
 
 	}
-	
+
 	public void removeLabel(){
 		getAttributeMap().put(AttributeMap.SHOWLABEL, false);
-		
+
 
 		getAttributeMap().put(AttributeMap.SIZE, new Dimension(1, 1));
-		
+
 	}
 
 	public Swimlane getParentSwimlane() {
